@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="44b31623-d175-489a-8e12-29a8b4952877" name="Imkerei Heimbürger" url="http://home581903994.1and1-data.host">
+        <fileTransfer host="home581903994.1and1-data.host" port="22" accessType="SFTP" username="u81382271">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

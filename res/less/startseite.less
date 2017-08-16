@@ -1,0 +1,81 @@
+.content {
+
+  @media (max-width: @screen-xs-max) {
+    margin-top: 0px;
+  }
+  margin-top: 20px;
+  .panel, .panel-default {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+
+    .panel-heading.startseite {
+      font-size: 24px;
+      color: @grey-dark;
+      background: none;
+      border: none;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    transition: opacity 3s;
+  }
+  .next {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+  .actual {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    filter: alpha(opacity=1);
+  }
+
+  #meinFader {
+    position: relative;
+    a {
+      position: absolute;
+      color: @orange;
+
+      &.nav-left, &.nav-right {
+        @media (min-width: @screen-lg-min) {
+          top: 215px;
+        }
+        @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+          top: 173px;
+        }
+        @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+          top: 127px;
+        }
+
+      }
+      &.nav-right {
+        right: 0;
+      }
+    }
+  }
+}
+
+.row > .startseite {
+  @media (min-width: @screen-lg-min) {
+    min-height: 500px;
+  }
+  @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+    min-height: 412px;
+  }
+  @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+    min-height: 314px;
+  }
+  @media (max-width: @screen-xs-max) {
+    min-height: 368px;
+  }
+
+  img {
+    width: 100%;
+  }
+}

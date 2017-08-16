@@ -1,0 +1,46 @@
+body{
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Open Sans", sans-serif;
+  }
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding-bottom: 80px;
+  @media (max-width: @screen-xs-max) {
+    padding-bottom: 0;
+  }
+}
+
+.outer {
+  display: table;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.inner {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+.second-title {
+  color: @grey-dark;
+}
+
+.navigation {
+  background-color: #f2f2f0;
+  height: 208px;
+  border-bottom: 1px solid #666;
+
+  @media (max-width: @screen-xs-max) {
+    height: 50px;
+  }
+}

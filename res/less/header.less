@@ -1,0 +1,124 @@
+.header {
+  background-color: @grey-lightest;
+  border-bottom: 1px solid @orange;
+  .container .row .col-md-6 {
+    @media (max-width: @screen-md-max){
+      text-align: center;
+    }
+  }
+  @media (max-width: @screen-sm-max) {
+    margin-top: 50px;
+  }
+}
+div.navigation {
+  h2 {
+    text-transform: uppercase;
+    margin-top: 82px;
+    padding-right: 15px;
+    float: right;
+  }
+  ul {
+    margin-top: 155px;
+    float: right;
+
+    @media (max-width: @screen-sm-max) {
+      margin: 15px auto;
+      max-width: 479px;
+      float: none;
+    }
+
+    li a {
+      color: @brown;
+      font-size: 16px;
+      @media (max-width: @screen-xs-max){
+        font-size: 12px;
+      }
+      @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+        font-size: 14px;
+      }
+      border-radius: 0;
+      border-bottom: 2px solid transparent;
+      transition: border-bottom 0.5s;
+      text-transform: uppercase;
+
+      &:hover, &.active {
+        background: none;
+        border-bottom: 2px solid @orange;
+      }
+    }
+  }
+}
+.navigation-small {
+  position: fixed;
+  width: 200px;
+  top: 0;
+  bottom: 0;
+  border-right: 1px solid @brown;
+  border-radius: 0;
+  background-color: #FFF;
+  left: -200px;
+  z-index: 1050;
+  transition: left 0.5s;
+  overflow: scroll;
+
+  .navigation-img {
+    background-color: @grey-lightest;
+    border-bottom: 1px solid @brown;
+    margin-bottom: 20px;
+    text-align: right;
+    padding-right: 15px;
+  }
+
+  .list-group {
+    box-shadow: none;
+    .list-group-item {
+      cursor: pointer;
+      border-radius: 0;
+      border: none;
+      text-transform: uppercase;
+
+      a{
+        color: @brown;
+      }
+
+
+      a:focus, a:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &.open {
+    left: 0;
+  }
+}
+
+nav.navbar-default {
+  border-radius: 0;
+  border-bottom: 1px solid @orange;
+  color: @brown;
+  background-color: @grey-lightest;
+
+  .navbar-center {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin: auto;
+    z-index: -50;
+  }
+}
+
+#toggle-helper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  display: none;
+
+  &.open{
+    display: block;
+  }
+}

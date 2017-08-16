@@ -1,0 +1,46 @@
+.produkte {
+  a {
+
+    img {
+      transition: opacity 0.5s;
+      opacity: 1;
+    }
+    .produktname {
+      font-size: 36px;
+      color: @grey-darkest;
+      position: absolute;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      top: 150px;
+      transition: opacity 1s;
+      opacity: 0;
+    }
+
+    &:hover {
+      img {
+        opacity: 0.3;
+      }
+      .produktname {
+        opacity: 1
+      }
+
+    }
+  }
+}
+
+.produkttabelle{
+  font-size: 16px;
+  .col-xs-12 {
+    .row {
+      padding: 5px;
+    }
+    &>.row {
+      transition: background-color .3s;
+      &:hover {
+        background-color: @grey-lightest;
+        cursor: pointer;
+      }
+    }
+  }
+}
